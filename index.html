@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Number guessing game</title>
+    <link rel="Stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">NUMBER GUESSING GAME</h1>
+      <div class="inner-attempt">
+        <div class="inner-container">
+          <div class="guess-title">Guess the number between 1 and 100</div>
+          <div class="guess-subtitle">
+            See if you can guess it in 10 attempts or fewer. We'll tell you if
+            your guess is SMALL or BIG.
+          </div>
+          <div class="form-container">
+            <div class="form">
+              <input
+                id="user-input"
+                class="user-input"
+                name="user-input"
+                placeholder="Guess the number"
+                type="number"
+                min="1"
+              />
+              <button type="submit" class="guess-submit">Check</button>
+            </div>
+          </div>
+          <div class="previous-guess"></div>
+          <div class="clue"></div>
+          <div class="result"></div>
+          <button class="new-game">Start New Game</button>
+        </div>
+        <div class="attempt">
+          <h2 class="attempt-label">REMAINING ATTEMPTS</h2>
+          <div class="attempt-count">10</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
