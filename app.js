@@ -68,8 +68,8 @@ function handleGameOver() {
 
 function endGame() {
   guessButton.disabled = true;
+  inputElement.disabled = true;
   previousGuess.textContent = "";
-  if(attemptsLeft > 1) result.textContent = "";
   clue.textContent = "";
   newGame.style.display = "block";
 }
